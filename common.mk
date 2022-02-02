@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     audioadsprpcd \
+    firmware_aw_cali.bin_symlink \
     liba2dpoffload \
     libbatterylistener \
     libcomprcapture \
