@@ -50,6 +50,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     'vendor/bin/thermal-engine': blob_fixup()
         .binary_regex_replace(b'oem/etc/thermal-engine.conf', b'odm/etc/thermal-engine.conf'),
+    'vendor/etc/perf/perfconfigstore.xml': blob_fixup()
+        .patch_file('blob-patches/perfconfigstore.patch'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,209,218'),
     'vendor/etc/wfdconfig.xml': blob_fixup()
