@@ -235,6 +235,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfig-Platform-Overlay \
+    DeviceAsWebcamRRO-Zambezi \
     FrameworkRes-Common-Overlay \
     FrameworkRes-Zambezi-Overlay \
     FrameworksRes-Esim-Capabilities-Rel15-Overlay \
