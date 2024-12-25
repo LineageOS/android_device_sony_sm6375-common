@@ -240,6 +240,7 @@ PRODUCT_PACKAGES += \
     FrameworkRes-Zambezi-Overlay \
     FrameworksRes-Esim-Capabilities-Rel15-Overlay \
     FrameworksResCommon_Sys \
+    NcmTetheringOverlay \
     ServiceWifiRes-Zambezi-Overlay \
     SettingsResCommon_Sys \
     SystemUIResCommon_Sys \
