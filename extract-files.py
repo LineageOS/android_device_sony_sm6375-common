@@ -49,8 +49,11 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/etc/seccomp_policy/wfdservice.policy': blob_fixup()
         .add_line_if_missing('memfd_create: 1')
         .add_line_if_missing('rt_tgsigqueueinfo: 1'),
+    'system_ext/lib/libwfdaudiofoundation.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V3-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'system_ext/lib/libwfdservice.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
+        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so')
+        .replace_needed('libaudiofoundation.so', 'libwfdaudiofoundation.so'),
     'vendor/bin/thermal-engine': blob_fixup()
         .binary_regex_replace(b'oem/etc/thermal-engine.conf', b'odm/etc/thermal-engine.conf'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
