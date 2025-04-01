@@ -14,6 +14,14 @@ on boot
     write /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_activation_input 1
     chown system system /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_interruption_input
 
+on property:sys.boot_completed=1
+    write /sys/class/power_supply/battery/device/iio:device4/in_index_battery_bootup_shutdown_phase_input 3
+    write /sys/class/power_supply/battery/uevent change
+
+on property:sys.shutdown.requested=*
+    write /sys/class/power_supply/battery/device/iio:device4/in_index_battery_bootup_shutdown_phase_input 4
+    write /sys/class/power_supply/battery/uevent change
+
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
     # IRQ 167: msm_drm
