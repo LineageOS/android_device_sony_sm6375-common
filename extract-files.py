@@ -46,6 +46,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/bin/wfdservice': blob_fixup()
+        .add_needed('libwfdservice_shim_v1.so'),
     'system_ext/etc/seccomp_policy/wfdservice.policy': blob_fixup()
         .add_line_if_missing('memfd_create: 1')
         .add_line_if_missing('rt_tgsigqueueinfo: 1'),
