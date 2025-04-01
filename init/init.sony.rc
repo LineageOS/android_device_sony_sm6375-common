@@ -11,6 +11,9 @@ on boot
     write /sys/class/battchg_ext/smart_charging_activation 1
     chown system system /sys/class/battchg_ext/smart_charging_interruption
 
+    write /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_activation_input 1
+    chown system system /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_interruption_input
+
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
     # IRQ 167: msm_drm
