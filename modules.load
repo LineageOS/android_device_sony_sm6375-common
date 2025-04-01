@@ -29,6 +29,8 @@ rx_macro_dlkm.ko
 sec_ts_drv.ko
 snx0.ko
 snd_event_dlkm.ko
+somc_battchg_ext.ko
+somc_battman_dbg.ko
 stub_dlkm.ko
 swr_ctrl_dlkm.ko
 swr_dlkm.ko
