@@ -429,6 +429,7 @@ vendor/lib64/hw/vulkan.adreno.so
 
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.1-service
+vendor/bin/idd-logreader
 vendor/bin/iddd
 vendor/etc/init/init.sony.idd.rc
 vendor/etc/init/vendor.semc.system.idd@1.1-service.rc
