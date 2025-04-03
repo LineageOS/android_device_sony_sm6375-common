@@ -16,6 +16,24 @@
       "message": "from stock?",
       "revId": "86806fff83861a194300a4bff680970cf20c270f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78a584be_03a76154",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-03T20:27:48Z",
+      "side": 1,
+      "message": "didn\u0027t see your comment but i fixed it already.",
+      "parentUuid": "04875fdc_8f3a1b4f",
+      "revId": "86806fff83861a194300a4bff680970cf20c270f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
