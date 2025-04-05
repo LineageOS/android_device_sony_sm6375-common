@@ -47,7 +47,7 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/bin/wfdservice': blob_fixup()
-        .add_needed('libwfdservice_shim_v1.so'),
+        .add_needed('libwfdservice_shim.so'),
     'system_ext/lib/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/bin/thermal-engine': blob_fixup()
