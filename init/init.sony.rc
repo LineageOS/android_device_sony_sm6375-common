@@ -7,6 +7,41 @@ on init
     wait /dev/block/bootdevice/by-name/TA
     start tad
 
+on post-fs-data
+    # power supply
+    chmod 0664 /sys/bus/iio/devices/iio:device4/in_index_battery_system_temp_level_input
+    chmod 0664 /sys/class/battchg_ext/batt_aging_level
+    chmod 0664 /sys/class/battchg_ext/batt_unaged
+    chmod 0664 /sys/class/battchg_ext/bootup_shutdown_phase
+    chmod 0664 /sys/class/battchg_ext/pd_icl
+    chmod 0664 /sys/class/battchg_ext/system_temp_level
+    chmod 0664 /sys/class/battchg_ext/usb_input_suspend
+    chmod 0664 /sys/class/power_supply/battery/charge_control_limit
+    chmod 0664 /sys/class/power_supply/battery/charge_full
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/chg_pwr_indication_control
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_activity_battery_lrc_socmax_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_activity_battery_lrc_socmin_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_current_battery_chg_pwr_fcc_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_current_battery_chg_pwr_icl_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_bootup_shutdown_phase_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_charger_enabled_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_enable_shutdown_at_low_battery_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_lrc_enable_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_activation_input
+    chmod 0664 /sys/class/power_supply/battery/device/iio:device4/in_index_battery_smart_charging_interruption_input
+    chmod 0664 /sys/class/power_supply/battery/uevent
+    chmod 0664 /sys/class/power_supply/bms/device/iio:device3/in_energy_charge_full_input
+    chmod 0664 /sys/class/power_supply/bms/device/iio:device3/in_index_batt_aging_level_input
+    chmod 0664 /sys/class/power_supply/usb/uevent
+
+    # usbpd
+    chmod 0664 /sys/class/usbpd_sm5038/usbpd_sm5038/select_pdo
+    chmod 0664 /sys/class/usbpd_sm5038/usbpd_sm5038/uevent
+    chmod 0664 /sys/class/usbpd/usbpd0/select_pdo
+    chmod 0664 /sys/class/usbpd/usbpd0/uevent
+
+    start charge_service
+
 on boot
     write /sys/class/battchg_ext/smart_charging_activation 1
     chown system system /sys/class/battchg_ext/smart_charging_interruption
@@ -30,6 +65,11 @@ on property:vendor.post_boot.parsed=1
     # IRQ 32: kgsl_3d0_irq
     write /proc/irq/167/smp_affinity_list 2
     write /proc/irq/32/smp_affinity_list 1
+
+service charge_service /vendor/bin/charge_service
+    user system
+    group system root oem_2993 wakelock
+    disabled
 
 service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     user oem_2997
