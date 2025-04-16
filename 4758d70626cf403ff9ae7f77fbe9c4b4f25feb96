@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69ed9aea_95048ef7",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-04-16T14:37:02Z",
+      "side": 1,
+      "message": "Is shipping API correct after the above change?",
+      "revId": "4758d70626cf403ff9ae7f77fbe9c4b4f25feb96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
