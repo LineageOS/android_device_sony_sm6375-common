@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "708cb578_2235f6e2",
+        "filename": "overlay/DeviceAsWebcamRRO-Zambezi/res/raw/ignored_v4l2_nodes.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-04-27T19:59:05Z",
+      "side": 1,
+      "message": "You should check if all those nodes exist",
+      "revId": "ba540e38196714ae132c7f30c3182aadb7cc14b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
