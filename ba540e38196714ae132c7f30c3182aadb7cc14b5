@@ -16,6 +16,24 @@
       "message": "You should check if all those nodes exist",
       "revId": "ba540e38196714ae132c7f30c3182aadb7cc14b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7993424a_de8fcdea",
+        "filename": "overlay/DeviceAsWebcamRRO-Zambezi/res/raw/ignored_v4l2_nodes.json",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-27T20:01:09Z",
+      "side": 1,
+      "message": "```\npdx225 / # ls /dev/vid*\n/dev/video0  /dev/video1  /dev/video2  /dev/video32  /dev/video33\n```",
+      "parentUuid": "708cb578_2235f6e2",
+      "revId": "ba540e38196714ae132c7f30c3182aadb7cc14b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
