@@ -7,7 +7,6 @@ btpower.ko
 bu520x1nvx.ko
 camera.ko
 ec617_drv.ko
-et613_drv.ko
 focaltech_fts.ko
 haptic.ko
 leds-aw2016.ko
