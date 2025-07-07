@@ -170,7 +170,8 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- True if camera app should be pinned via Pinner Service -->
+    <!-- Note: This config is deprecated, use config_pinnerCameraPinBytes instead.
+         True if camera app should be pinned via Pinner Service -->
     <bool name="config_pinnerCameraApp">true</bool>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
