@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1ef699d_bf383699",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-09T20:03:31Z",
+      "side": 1,
+      "message": "why not just set `vendor.wfdservice64\u003denable`?",
+      "revId": "c56140080aadbc3374460c39de7129091ba7d80f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
