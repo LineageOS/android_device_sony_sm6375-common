@@ -52,6 +52,24 @@
       "parentUuid": "9b91e308_bf1f9eae",
       "revId": "c56140080aadbc3374460c39de7129091ba7d80f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8fd2074_430f3b2e",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-09T20:08:03Z",
+      "side": 1,
+      "message": "Yes, I was going to propose that.",
+      "parentUuid": "22f7473d_ea115394",
+      "revId": "c56140080aadbc3374460c39de7129091ba7d80f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
