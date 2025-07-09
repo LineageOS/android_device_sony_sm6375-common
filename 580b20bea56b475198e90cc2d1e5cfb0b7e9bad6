@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8eae4956_5a962a03",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 967,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-07-09T19:19:38Z",
+      "side": 1,
+      "message": "```suggestion\n# WiFi Display (system) - from dada OS2.0.217.0.WOCMIXM\n```",
+      "revId": "580b20bea56b475198e90cc2d1e5cfb0b7e9bad6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
