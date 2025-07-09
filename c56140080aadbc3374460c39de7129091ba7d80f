@@ -16,6 +16,24 @@
       "message": "why not just set `vendor.wfdservice64\u003denable`?",
       "revId": "c56140080aadbc3374460c39de7129091ba7d80f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b91e308_bf1f9eae",
+        "filename": "extract-files.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-07-09T20:05:06Z",
+      "side": 1,
+      "message": "it\u0027s WfdService.apk\u0027s role to do so, it\u0027s expected to enable/disable it on demand and it\u0027s hardcoded to use *64 only for specific platforms.",
+      "parentUuid": "b1ef699d_bf383699",
+      "revId": "c56140080aadbc3374460c39de7129091ba7d80f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
