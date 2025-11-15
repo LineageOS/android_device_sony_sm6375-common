@@ -26,10 +26,10 @@ on property:sys.shutdown.requested=*
 
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
-    # IRQ 167: msm_drm
-    # IRQ 32: kgsl_3d0_irq
-    write /proc/irq/167/smp_affinity_list 2
-    write /proc/irq/32/smp_affinity_list 1
+    # IRQ 167 GIC 218: msm_drm
+    # IRQ  32 GIC 209: kgsl_3d0_irq
+    write /proc/irq/218/smp_affinity_list 2
+    write /proc/irq/209/smp_affinity_list 1
 
 service tad /vendor/bin/tad /dev/block/bootdevice/by-name/TA 0,16
     user oem_2997
