@@ -3,7 +3,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
@@ -23,6 +23,8 @@
          radio is unable to find any MCC information to infer wifi country code from -->
     <bool name="config_wifi_revert_country_code_on_cellular_loss" translatable="false">true</bool>
 
+    <!-- Integer parameters of the wifi to cellular handover feature
+         wifi should not stick to bad networks -->
     <!-- Integer threshold for low network score, should be somewhat less than the entry threshhold -->
     <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz" translatable="false">-81</integer>
 
